@@ -1,0 +1,16 @@
+/* Custom styles for Swiper pagination */
+.swiper-pagination-bullet {
+    background-color: #d1d5db; /* Gray color for inactive bullets */
+    opacity: 1;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: red; /* Red center for active bullet */
+    border: 2px solid white; /* White ring around active bullet */
+    width: 12px; 
+    height: 12px;
+    border-radius: 50%;
+  }

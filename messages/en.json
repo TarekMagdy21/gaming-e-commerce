@@ -1,0 +1,65 @@
+{
+  "AdWithLanguage": {
+    "advertisement": "Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!",
+    "shop": "ShopNow"
+  },
+  "NavbarHeader": {
+    "Exclusive": "Exclusive",
+    "Home": "Home",
+    "Contact": "Contact",
+    "About": "About",
+    "SignUp": "Sign Up",
+    "search": "What are you looking for?"
+  },
+  "Login": {
+    "log": "Log in to Exclusive",
+    "enter": "Enter your details below",
+    "email": "Email or Phone Number",
+    "password": "Password",
+    "login": "Log in",
+    "forget": "Forget Password?"
+  },
+  "footer": {
+    "exclusive": "Exclusive",
+    "subscribe": "Subscribe",
+    "discount": "Get 10% off your first order",
+    "enterEmail": "Enter your email",
+    "support": "Support",
+    "address": "123 Nile Street, Cairo, Egypt",
+    "email": "tarekmagdyahmed21@gmail.com",
+    "phone": "+20 1155539168",
+    "account": "Account",
+    "myAccount": "My Account",
+    "loginRegister": "Login / Register",
+    "cart": "Cart",
+    "wishlist": "Wishlist",
+    "shop": "Shop",
+    "quickLink": "Quick Link",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfUse": "Terms Of Use",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "downloadApp": "Download App",
+    "saveWithApp": "Save $3 with App New User Only"
+  },
+  "category": {
+    "electronics": "Electronics",
+    "mobiles": "Mobiles",
+    "grocery": "Grocery",
+    "beautyHealth": "Beauty & Health",
+    "fashion": "Fashion",
+    "homeKitchen": "Home & Kitchen",
+    "sportsFitness": "Sports & Fitness",
+    "babyProducts": "Baby Products"
+  },
+  "header": {
+    "title": "Today's",
+    "deal": "Flash Sales"
+  },
+  "countdown": {
+    "day": "days",
+    "hour": "hours",
+    "minute": "minutes",
+    "second": "seconds"
+  }
+}

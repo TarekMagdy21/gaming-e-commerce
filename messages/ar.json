@@ -1,0 +1,66 @@
+{
+  "AdWithLanguage": {
+    "advertisement": "تخفيضات الصيف على جميع بدلات السباحة والتوصيل السريع المجاني - خصم %50!",
+    "shop": "تسوق الآن"
+  },
+  "NavbarHeader": {
+    "Exclusive": "حصري",
+    "Home": "الصفحة الرئيسيه",
+    "Contact": "تواصل معنا",
+    "About": "معلومات عننا",
+    "SignUp": "الاشتراك",
+    "search": "ما الذي تبحث عنه؟"
+  },
+  "Login": {
+    "log": "قم بتسجيل الدخول",
+    "enter": "أدخل بيانات الحساب ",
+    "email": "البريد الإلكتروني أو رقم الهاتف",
+    "password": "كلمة المرور",
+    "login": "تسجيل الدخول",
+    "forget": "هل نسيت كلمة المرور؟"
+  },
+  "footer": {
+    "exclusive": "حصري",
+    "subscribe": "اشترك",
+    "discount": "احصل على خصم 10% على طلبك الأول",
+    "enterEmail": "أدخل بريدك الإلكتروني",
+    "arrow": "→",
+    "support": "الدعم",
+    "address": "123 شارع النيل، القاهرة، مصر",
+    "email": "tarekmagdyahmed21@gmail.com",
+    "phone": "+20 1155539168",
+    "account": "الحساب",
+    "myAccount": "حسابي",
+    "loginRegister": "تسجيل الدخول / التسجيل",
+    "cart": "العربة",
+    "wishlist": "قائمة الرغبات",
+    "shop": "المتجر",
+    "quickLink": "روابط مفيدة",
+    "privacyPolicy": "سياسة الخصوصية",
+    "termsOfUse": "شروط الاستخدام",
+    "faq": "الأسئلة الشائعة",
+    "contact": "اتصل بنا",
+    "downloadApp": "تحميل التطبيق",
+    "saveWithApp": "وفر 3 دولارات مع التطبيق للمستخدمين الجدد فقط"
+  },
+  "category": {
+    "electronics": "الإلكترونيات",
+    "mobiles": "الهواتف المحمولة",
+    "grocery": "البقالة",
+    "beautyHealth": "الجمال والصحة",
+    "fashion": "الأزياء",
+    "homeKitchen": "المنزل والمطبخ",
+    "sportsFitness": "الرياضة واللياقة البدنية",
+    "babyProducts": "منتجات الأطفال"
+  },
+  "header": {
+    "title": "عروض اليوم",
+    "deal": "عروض وخصومات"
+  },
+  "countdown": {
+    "day": "ايام",
+    "hour": "ساعات",
+    "minute": "دقائق",
+    "second": "ثواني"
+  }
+}
