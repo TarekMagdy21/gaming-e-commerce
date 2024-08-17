@@ -1,4 +1,3 @@
-import React from "react";
 import filledStar from "@/assets/homeProduct/filledStar.svg";
 import emptyStar from "@/assets/homeProduct/emptyStar.svg";
 import Image from "next/image";
