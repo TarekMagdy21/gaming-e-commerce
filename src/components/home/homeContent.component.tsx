@@ -1,15 +1,16 @@
 "use client";
 import { SectionHeader } from "@/common";
 import { HomeCategories } from "./HomeCategories.component";
-import { Countdown, FlashSalesWithArrow, ProductCard, ProductCarousel } from "./components";
+import { FlashSalesWithArrow, ProductCard } from "./components";
 import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
-import leftArrow from "@/assets/homeProduct/leftArrow.png";
-import rightArrow from "@/assets/homeProduct/rightArrow.png";
-import Image from "next/image";
-interface HomeContentProps {}
+import { Product } from "@/types";
+interface HomeContentProps {
+  products: Product[];
+}
 
-export const HomeContent: React.FC<HomeContentProps> = () => {
+export const HomeContent: React.FC<HomeContentProps> = ({ products }) => {
+  console.log("Products", products);
   const t = useTranslations("header");
   const { locale } = useParams();
   return (
@@ -18,7 +19,29 @@ export const HomeContent: React.FC<HomeContentProps> = () => {
       <div className="mx-[8.438rem]">
         <SectionHeader title="title" />
         <FlashSalesWithArrow />
-       <ProductCarousel/>
+        <div className="flex items-center mb-[8.125rem]">
+          <div className="grid grid-cols-6 mx-auto gap-8">
+            {products?.map(
+              ({
+                _id,
+                images,
+                name,
+                price,
+                rateAverage,
+                rateCount,
+              }: Product) => (
+                <ProductCard
+                  key={_id}
+                  title={name}
+                  price={price}
+                  imageUrl={images[0]?.secure_url}
+                  rating={rateAverage || 0}
+                  reviewsCount={rateCount || 0}
+                />
+              )
+            )}
+          </div>
+        </div>
       </div>
     </>
   );
