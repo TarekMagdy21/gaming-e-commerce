@@ -5,3 +5,6 @@ export * from "./ProductCard.component";
 export * from "./TitleWithArrows.component";
 export * from "./CategoryCard.component";
 export * from "./ImageWithCountdown";
+export * from "./BestSellingProducts.component";
+export * from "./NewArrival.component";
+export * from "./Services.component";

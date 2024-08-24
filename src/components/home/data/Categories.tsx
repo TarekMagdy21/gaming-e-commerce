@@ -19,12 +19,12 @@ export const Categories = () => {
     },
     { title: t("fashion"), image: <SlUserFemale size={50} />, path: "fashion" },
     {
-      title: t("babyProducts"),
+      title: t("music"),
       image: <IoMusicalNotesOutline size={50} />,
       path: "music",
     },
     {
-      title: t("music"),
+      title: t("sportsFitness"),
       image: <MdOutlineSportsTennis size={50} />,
       path: "sports",
     },

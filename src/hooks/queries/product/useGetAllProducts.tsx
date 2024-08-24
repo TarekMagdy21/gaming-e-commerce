@@ -10,6 +10,8 @@ export const useGetAllProducts = () => {
       const response = await productGet();
       return response?.data?.products as Product[];
     },
+    staleTime: 1000 * 60 * 10, // 10 minutes
+    cacheTime: 1000 * 60 * 30, // 30 minutes
     onSuccess: () => {
       toast.success("Product fetched successfully", {
         position: "top-right",

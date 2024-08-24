@@ -35,10 +35,10 @@ export const ImageWithCountdown: React.FC<ImageWithCountdownProps> = ({
       dir={locale === "en" ? "ltr" : "rtl"}
     >
       <div className="w-1/3">
-        <p className="mb-8 text-[#00FF66] text-base font-semibold">
+        <p className="mb-8 text-[#00FF66] text-xl font-semibold">
           {t("header.categories")}
         </p>
-        <p className="text-white text-5xl font-semibold mb-8">
+        <p className="text-white text-5xl font-semibold mb-8 leading-snug">
           {t("imageWithText.enhance")}{" "}
         </p>
         <div className="flex items-center justify-start gap-6 mb-10">
@@ -52,7 +52,7 @@ export const ImageWithCountdown: React.FC<ImageWithCountdownProps> = ({
           </div>
           <div
             className={`bg-white text-black   flex flex-col items-center  ${
-              locale === "en" ? "px-[1.063rem] py-[0.875rem]" : "px-6 py-2"
+              locale === "en" ? "px-[1.063rem] py-[0.875rem]" : "px-6 py-3"
             } rounded-full`}
           >
             <p className="text-base font-semibold">{timeLeft?.hours}</p>
@@ -60,7 +60,7 @@ export const ImageWithCountdown: React.FC<ImageWithCountdownProps> = ({
           </div>
           <div
             className={`bg-white text-black   flex flex-col items-center  ${
-              locale === "en" ? "px-[0.625rem] py-[0.875rem]" : "rtl"
+              locale === "en" ? "px-[0.625rem] py-[0.875rem]" : "px-6 py-3"
             } rounded-full`}
           >
             <p className="text-base font-semibold">{timeLeft?.minutes}</p>
@@ -68,7 +68,7 @@ export const ImageWithCountdown: React.FC<ImageWithCountdownProps> = ({
           </div>
           <div
             className={`bg-white text-black     flex flex-col items-center  ${
-              locale === "en" ? "px-[0.438rem] py-[0.875rem]" : "rtl"
+              locale === "en" ? "px-[0.438rem] py-[0.875rem]" : "px-6 py-3"
             }  rounded-full`}
           >
             <p className="text-base font-semibold">{timeLeft?.seconds}</p>
@@ -79,8 +79,12 @@ export const ImageWithCountdown: React.FC<ImageWithCountdownProps> = ({
           {t("imageWithText.buy")}{" "}
         </button>
       </div>
-      <div className="relative ">
-        <Image src={radio} alt="Radio" className="rounded-lg" />
+      <div className="relative p-5">
+        {/* Blurred background */}
+        <div className="absolute inset-0 bg-white bg-opacity-20   rounded-full  blur-2xl"></div>
+
+        {/* Image */}
+        <Image src={radio} alt="Radio" className="relative rounded-lg" />
       </div>
     </div>
   );

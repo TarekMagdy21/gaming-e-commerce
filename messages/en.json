@@ -60,7 +60,9 @@
     "categories": "Categories",
     "browse": "Browse By Category",
     "month": "This Month",
-    "best": "Best Selling Products"
+    "best": "Best Selling Products",
+    "feature": "Featured",
+    "newArrival": "New Arrival"
   },
   "countdown": {
     "day": "days",
@@ -75,5 +77,13 @@
   "random": {
     "viewall": "View All",
     "viewallproducts": "View All Products"
+  },
+  "services": {
+    "freeShipping": "Free and fast delivery",
+    "freeShippingDesc": "Free delivery for all orders over $140",
+    "support24": "24/7 Customer Service",
+    "support24Desc": "Friendly 24/7 customer support",
+    "moneyBack": "Money Back Guarantee",
+    "moneyBackDesc": "We return money within 30 days"
   }
 }

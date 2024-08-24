@@ -5,7 +5,6 @@ import { useTranslations } from "next-intl";
 import leftArrow from "@/assets/homeProduct/leftArrow.png";
 import rightArrow from "@/assets/homeProduct/rightArrow.png";
 import Image from "next/image";
-import { Ref } from "react";
 
 export const FlashSalesWithArrow = ({
   scrollableDivRef,
