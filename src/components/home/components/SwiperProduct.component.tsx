@@ -29,9 +29,10 @@ export const SliderProduct = () => {
           <Image
             src={image1}
             alt="first"
-            layout="fill"
-            objectFit="cover"
-            className="w-full h-full"
+            fill
+            sizes="100%"
+            className="w-full h-full object-cover"
+            priority
           />
         </div>
       </SwiperSlide>
@@ -40,20 +41,21 @@ export const SliderProduct = () => {
           <Image
             src={image2}
             alt="second"
-            layout="fill"
-            objectFit="cover"
-            className="w-full h-full"
+            fill
+            sizes="100%"
+            className="w-full h-full object-cover"
           />
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="relative w-full h-[25rem]">
           <Image
+            priority
             src={image1}
             alt="first"
-            layout="fill"
-            objectFit="cover"
-            className="w-full h-full"
+            fill
+            sizes="100%"
+            className="w-full h-full object-cover"
           />
         </div>
       </SwiperSlide>
@@ -62,9 +64,9 @@ export const SliderProduct = () => {
           <Image
             src={image2}
             alt="second"
-            layout="fill"
-            objectFit="cover"
-            className="w-full h-full"
+            fill
+            sizes="100%"
+            className="w-full h-full object-cover"
           />
         </div>
       </SwiperSlide>

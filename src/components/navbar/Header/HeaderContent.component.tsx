@@ -22,6 +22,7 @@ export const HeaderContent = () => {
       </div>
       <div className="relative">
         <input
+          name="search"
           type="text"
           placeholder={t("search")}
           className={`bg-[#F5F5F5]   py-2 rounded-md ${

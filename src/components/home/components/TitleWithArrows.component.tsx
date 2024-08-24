@@ -7,7 +7,7 @@ import rightArrow from "@/assets/homeProduct/rightArrow.png";
 import Image from "next/image";
 import { Ref } from "react";
 
-export const FlashSalesWithArrow = ({
+export const TitleWithArrows = ({
   scrollableDivRef,
 }: {
   scrollableDivRef: any;
@@ -32,9 +32,8 @@ export const FlashSalesWithArrow = ({
       className=" mt-6 flex items-center gap-20 mb-[4.375rem] "
       dir={locale === "en" ? "ltr" : "rtl"}
     >
-      <p className="text-4xl font-semibold">{t("deal")}</p>
-      <Countdown targetDate="2024-11-30" />
-      <div
+      <p className="text-4xl font-semibold">{t("browse")}</p>
+       <div
         className={`flex items-center gap-2 ${
           locale === "en" ? "ml-auto" : "mr-auto flex-row-reverse"
         }`}

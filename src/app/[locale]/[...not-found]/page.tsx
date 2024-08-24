@@ -15,7 +15,7 @@ export default function NotFound() {
       </p>
       <Link
         href={"/"}
-        className="bg-[#db4444] px-8 py-5 rounded-lg mx-auto mt-20 flex w-fit text-white"
+        className="bg-red px-8 py-5 rounded-lg mx-auto mt-20 flex w-fit text-white"
       >
         Back to home page
       </Link>

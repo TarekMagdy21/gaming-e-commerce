@@ -1,49 +1,18 @@
 "use client";
+import { CountdownProps, TimeLeft } from "@/types";
+import { calculateTimeLeft } from "@/utils";
 import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
 import { useState, useEffect } from "react";
 
-interface CountdownProps {
-  targetDate: string;
-}
-
-interface TimeLeft {
-  days?: string;
-  hours?: string;
-  minutes?: string;
-  seconds?: string;
-}
-
 export const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
-  const calculateTimeLeft = (): TimeLeft => {
-    const difference = +new Date(targetDate) - +new Date();
-    let timeLeft: TimeLeft = {};
-
-    if (difference > 0) {
-      timeLeft = {
-        days: String(Math.floor(difference / (1000 * 60 * 60 * 24))).padStart(
-          2,
-          "0"
-        ),
-        hours: String(
-          Math.floor((difference / (1000 * 60 * 60)) % 24)
-        ).padStart(2, "0"),
-        minutes: String(Math.floor((difference / 1000 / 60) % 60)).padStart(
-          2,
-          "0"
-        ),
-        seconds: String(Math.floor((difference / 1000) % 60)).padStart(2, "0"),
-      };
-    }
-
-    return timeLeft;
-  };
-
-  const [timeLeft, setTimeLeft] = useState<TimeLeft>(calculateTimeLeft());
+  const [timeLeft, setTimeLeft] = useState<TimeLeft>(
+    calculateTimeLeft({ targetDate })
+  );
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setTimeLeft(calculateTimeLeft());
+      setTimeLeft(calculateTimeLeft({ targetDate }));
     }, 1000);
 
     return () => clearTimeout(timer);

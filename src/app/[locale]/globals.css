@@ -2,10 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer utilities {
   .placeholder-style::placeholder {
     padding: 5px 12px;
     margin: 5px;
   }
+}
+
+/* Custom scrollbar hiding */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
 }

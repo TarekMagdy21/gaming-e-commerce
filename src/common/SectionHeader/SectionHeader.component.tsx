@@ -14,8 +14,8 @@ export const SectionHeader: React.FC<SectionHeaderProps> = ({ title }) => {
         locale === "en" ? "flex " : " flex flex-row-reverse"
       } items-center gap-[0.625rem]`}
     >
-      <div className="w-5 h-10 bg-[#DB4444]  rounded"></div>
-      <p className="font-semibold text-base text-[#DB4444]">{t(title)}</p>
+      <div className="w-5 h-10 bg-red  rounded"></div>
+      <p className="font-semibold text-base text-red">{t(title)}</p>
     </div>
   );
 };

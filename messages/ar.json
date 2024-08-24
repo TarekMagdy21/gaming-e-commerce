@@ -51,16 +51,30 @@
     "fashion": "الأزياء",
     "homeKitchen": "المنزل والمطبخ",
     "sportsFitness": "الرياضة واللياقة البدنية",
-    "babyProducts": "منتجات الأطفال"
+    "babyProducts": "منتجات الأطفال",
+    "books": "الكتب",
+    "music":"الموسيقى"
   },
   "header": {
     "title": "عروض اليوم",
-    "deal": "عروض وخصومات"
+    "deal": "عروض وخصومات",
+    "categories": "الأقسام",
+    "browse": "تصفح حسب الفئة",
+    "month": "هذا الشهر",
+    "best": "المنتجات الأكثر مبيعا"
   },
   "countdown": {
     "day": "ايام",
     "hour": "ساعات",
     "minute": "دقائق",
     "second": "ثواني"
+  },
+  "imageWithText": {
+    "enhance": " تحسين تجربة الموسيقى الخاصة بك",
+    "buy": "اشتري الآن"
+  },
+  "random": {
+    "viewall": "عرض الكل",
+    "viewallproducts": "عرض جميع المنتجات"
   }
 }

@@ -17,6 +17,9 @@ const config: Config = {
       fontFamily: {
         poppins: ["var(--font-poppins)"],
       },
+      colors: {
+        red: "#DB4444",
+      },
     },
   },
   plugins: [],

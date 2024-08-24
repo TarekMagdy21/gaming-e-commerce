@@ -54,13 +54,13 @@ const LoginForm: React.FC<LoginFormProps> = ({
           <button
             type="submit"
             disabled={loginHandlerLoading}
-            className="text-white bg-[#DB4444] py-4 px-10 rounded-lg"
+            className="text-white bg-red py-4 px-10 rounded-lg"
           >
             {loginHandlerLoading
               ? `${locale === "en" ? "Loading..." : "تحميل..."}`
               : `${t("login")}`}
           </button>
-          <Link href={"/"} className="text-[#DB4444]">
+          <Link href={"/"} className="text-red">
             {t("forget")}
           </Link>
         </div>

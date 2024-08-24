@@ -29,7 +29,9 @@ export const FooterContent = () => {
           <div className="text-base  text-[#fafafa] pb-4">{t("discount")}</div>
           <div className="relative">
             <input
+              name="email"
               type="text"
+              autoComplete="off"
               className={`
                 bg-black border border-white p-2 rounded-md text-white 
                                 ${locale === "en" ? "pr-10" : "pl-10"}
@@ -85,19 +87,9 @@ export const FooterContent = () => {
           <div className="flex gap-3">
             <Image src={qrCode} alt="qrCode" width={100} />
             <div className=" flex flex-col gap-5 mt-1  ml-2">
-              <Image
-                src={googlePlay}
-                alt="qrCode"
-                width={121}
-                className="cursor-pointer"
-              />
+              <Image src={googlePlay} alt="qrCode" className="cursor-pointer" />
 
-              <Image
-                src={appStore}
-                alt="qrCode"
-                width={121}
-                className="cursor-pointer"
-              />
+              <Image src={appStore} alt="qrCode" className="cursor-pointer" />
             </div>
           </div>
           <div className="flex items-center justify-start gap-7 pt-6 ">

@@ -50,16 +50,30 @@
     "fashion": "Fashion",
     "homeKitchen": "Home & Kitchen",
     "sportsFitness": "Sports & Fitness",
-    "babyProducts": "Baby Products"
+    "babyProducts": "Baby Products",
+    "books": "Books",
+    "music": "Music"
   },
   "header": {
     "title": "Today's",
-    "deal": "Flash Sales"
+    "deal": "Flash Sales",
+    "categories": "Categories",
+    "browse": "Browse By Category",
+    "month": "This Month",
+    "best": "Best Selling Products"
   },
   "countdown": {
     "day": "days",
     "hour": "hours",
     "minute": "minutes",
     "second": "seconds"
+  },
+  "imageWithText": {
+    "enhance": "Enhance Your Music Experience",
+    "buy": "Buy Now"
+  },
+  "random": {
+    "viewall": "View All",
+    "viewallproducts": "View All Products"
   }
 }

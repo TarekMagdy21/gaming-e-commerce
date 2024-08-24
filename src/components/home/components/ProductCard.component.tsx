@@ -11,6 +11,7 @@ interface ProductCardProps {
   discount?: number;
   imageUrl: string;
   reviewsCount: number;
+  imageSize?: { width: number; height: number };
 }
 
 export const ProductCard: React.FC<ProductCardProps> = ({
@@ -20,6 +21,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   imageUrl,
   reviewsCount,
   rating,
+  imageSize: { width, height } = { width: 190, height: 180 },
 }) => {
   const discountedPrice = price - (price * (discount ?? 0)) / 100;
 
@@ -29,7 +31,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   return (
     <div className="relative ">
       {(discount ?? 0) > 0 && (
-        <div className="absolute top-4 left-4 bg-[#DB4444] rounded-md text-white px-3 py-1 text-sm">
+        <div className="absolute top-4 left-4 bg-red rounded-md text-white px-3 py-1 text-sm">
           -{discount}%
         </div>
       )}
@@ -52,11 +54,15 @@ export const ProductCard: React.FC<ProductCardProps> = ({
 
       <div className="relative group">
         <div className="bg-[#F5F5F5] px-10 py-[2.188rem] mx-auto rounded-sm">
-          <div className="relative w-[190px] h-[180px] mx-auto">
+          <div
+            className="relative mx-auto"
+            style={{ width: `${width}px`, height: `${height}px` }}
+          >
             <Image
               src={imageUrl}
               alt={`${price}+${title}`}
-              layout="fill" // Fill the container
+              fill
+              sizes="100%"
               className="rounded-lg object-contain"
             />
           </div>
@@ -74,7 +80,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
       <div className="mt-4 z-20 relative bg-white">
         <p className="text-base font-medium truncate">{truncatedTitle}</p>
         <div className="text-base flex items-center gap-3 font-medium mt-2">
-          <p className="text-[#DB4444]">${discountedPrice.toFixed(2)}</p>
+          <p className="text-red">${discountedPrice.toFixed(2)}</p>
           <p
             className={`${
               (discount ?? 0) > 0
