@@ -1,7 +1,7 @@
-import { userCreateType } from "@/types";
-export const userCreate = async (userDetails: userCreateType) => {
+import { authLoginType } from "@/types";
+export const userLogin = async (userDetails: authLoginType) => {
   try {
-    const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/user`, {
+    const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/user/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

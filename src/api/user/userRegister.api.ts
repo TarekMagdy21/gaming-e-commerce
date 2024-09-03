@@ -1,5 +1,5 @@
-import { userCreateType } from "@/types";
-export const userCreate = async (userDetails: userCreateType) => {
+import { authRegisterType } from "@/types";
+export const userRegister = async (userDetails: authRegisterType) => {
   try {
     const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/user`, {
       method: "POST",

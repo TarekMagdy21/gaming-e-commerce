@@ -1,9 +1,9 @@
 "use client";
 import { LoginContent } from "@/components";
-import { useAuthLogin } from "@/hooks/mutations/auth";
+import { useLogin } from "@/hooks/mutations";
 interface LoginHocProps {}
 export const LoginHoc: React.FC<LoginHocProps> = () => {
-  const { mutate, isPending } = useAuthLogin();
+  const { mutate, isPending } = useLogin();
   return (
     <LoginContent
       loginHandler={(data) => mutate(data)}
